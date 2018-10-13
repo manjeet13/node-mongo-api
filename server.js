@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/users', userRoutes);
 app.use('/users/:id/posts', postRoutes);
 
-
+console.log(process.env.PORT);
 //start the server
 app.listen(config.PORT, (err)=> {
     if(err) {
