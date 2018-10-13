@@ -10,7 +10,7 @@ It includes two things:
 
 #### run the mongo server from a different terminal tab via "sudo mongod" 
 
-#### type "node service.js" from the project folder. This will fetch users from the remote and insert them to mongo database under the "master" db name
+#### type "node service.js" from the project folder. This will fetch users, posts and comments JSON from the remote and insert them to mongo database under the "master" db name
 
 #### type "node server.js" to run the express server on PORT 3000
 
