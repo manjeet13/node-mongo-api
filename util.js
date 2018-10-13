@@ -50,7 +50,7 @@ module.exports = class DbService {
 	 */
 	fetchPosts(url) {
 		return new Promise((resolve, reject)=> {
-			request('https://jsonplaceholder.typicode.com/posts', (error, response, body)=> {
+			request(url, (error, response, body)=> {
 		        if(error) {
 		            console.log('error:', error); // Print the error if one occurred
 		            reject(err);
@@ -86,7 +86,7 @@ module.exports = class DbService {
 	 */
 	fetchComments(url) {
 		return new Promise((resolve, reject)=> {
-			request('https://jsonplaceholder.typicode.com/comments', (error, response, body)=> {
+			request(url, (error, response, body)=> {
 		        if(error) {
 		            console.log('error:', error); // Print the error if one occurred
 		            reject(err);
@@ -238,6 +238,7 @@ module.exports = class DbService {
 		})
 		
 	}
+
 
 	setError(err) {
 		this._error = err;

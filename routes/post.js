@@ -1,3 +1,8 @@
+/**
+ * @author : Manjeet Kumar
+ * @description : define the post routes to fetch all the posts related to a user and to
+ */
+
 const express = require('express');
 const util = require('./../util');
 
@@ -14,15 +19,6 @@ router.get('/', async (req, res)=> {
     })
 
     res.json(data);
-});
-
-router.get('/posts/:post_id', async (req, res)=> {
-    let userId = req.params.id;
-    let postId = req.params.post_id;
-    let data = await utilObj.getPostById(userId, postId).then((dbResponse)=> {
-        return dbResponse;
-    }).catch((err)=> console.log("err: ", err));
-    console.log(data);
 });
 
 module.exports = router;

@@ -1,3 +1,8 @@
+/**
+ * @author : Manjeet Kumar
+ * @description : define the user collection schema
+ */
+
 const mongoose = require("mongoose");
 
 var userSchema  = new mongoose.Schema({

@@ -1,3 +1,8 @@
+/**
+ * @author : Manjeet Kumar
+ * @description : define the post collection schema
+ */
+
 const mongoose = require("mongoose");
 
 var postSchema = new mongoose.Schema({

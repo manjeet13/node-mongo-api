@@ -1,3 +1,9 @@
+/**
+ * @author : Manjeet Kumar
+ * @description : define the user routes to fetch all the users data (bulk and by id)
+ */
+
+
 const express = require('express');
 const util = require('../util');
 

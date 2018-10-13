@@ -1,11 +1,16 @@
+/**
+ * @author : Manjeet Kumar
+ * @description : define the comment collection schema
+ */
+
 const mongoose = require("mongoose");
 
 var commentSchema = new mongoose.Schema({
+    id: Number,
     postId: {
         type: mongoose.Schema.Types.Number,
         ref: "Post"
     },
-    id: Number,
     name: String,
     email: String,
     body: String
